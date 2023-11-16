@@ -1,0 +1,936 @@
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../fonts/subset-SpaceGrotesk-Light.eot');
+    src: url('../fonts/subset-SpaceGrotesk-Light.eot?#iefix') format('embedded-opentype'),	
+        url('../fonts/subset-SpaceGrotesk-Light.woff2') format('woff2'),
+        url('../fonts/subset-SpaceGrotesk-Light.woff') format('woff'),
+        url('../fonts/subset-SpaceGrotesk-Light.ttf') format('truetype'),
+        url('../fonts/subset-SpaceGrotesk-Light.svg#SpaceGrotesk-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Alegreya Sans SC';
+    src: url('../fonts/AlegreyaSansSC-Medium.woff2') format('woff2'),
+        url('../fonts/AlegreyaSansSC-Medium.woff') format('woff'),
+        url('../fonts/AlegreyaSansSC-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Dyslexie Regular';
+    src: url('../fonts/Dyslexie_Regular_166803.woff') format('woff'),
+        url('../fonts/Dyslexie_Regular_166803.ttf') format('truetype');
+    font-style: normal;
+}
+*
+{
+	font-family: 'Dyslexie Regular';
+	color: #334;
+}
+@page 
+{
+	padding: 0; 
+	margin: 0; 
+}
+body 
+{ 
+	padding: 0 0 0 50px; 
+	margin: 0;
+	background-color: #fff; 
+}
+h1, h2, h3, h4 
+{ 
+	padding: 0px; 
+	margin: 0px; 
+}
+.unicode
+{
+	font-size: 80px;
+	color: #000;
+}
+.header
+{
+	position: relative;
+	height: 200px; 
+}
+.headerTitleBar
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 150px 20px 150px;
+}
+.headerTitle 
+{
+	font-family: 'Dyslexie Regular';
+	font-size: 42px;
+	padding: 0;
+	margin: 0 0 -8px 0;
+}
+.headerSubtitle
+{
+	font-size: 20px;
+	padding: 0;
+	margin: -8px 0 0 0;
+}
+.headerIssue
+{
+	margin-top: 12px;
+	font-size: 14px;
+}
+.storyCover
+{
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	height: 700px !important;
+	margin: 0;
+	z-index: 0; 
+}
+.storyTitleBar
+{
+	position: absolute;
+	top: 400px;
+	right: 0;
+	min-width: 60%;
+	max-width: 1100px;
+	opacity: 0.8;
+	text-align: left;
+	margin: 0 0 0 20px;
+}
+.storyTitle
+{
+	background-color: #eef;
+	font-size: 22px;
+	padding: 20px 30px 20px 30px;
+}
+.storyAuthor
+{
+	font-size: 16px;
+	background-color: #223;
+	color: #eef;
+	padding: 20px 30px 20px 30px;
+	margin: 0 0 0 100px;
+}
+.storyAuthor img
+{
+	width: 20px;
+	height: 20px;
+	margin-bottom: -2px;
+}
+.storyAuthor a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.storyOuterContent
+{
+	position: relative;
+	background-color: #fff;
+	max-width: 1100px;
+	margin: -100px auto 0 auto;
+	z-index: 1;
+}
+.storyAudio
+{
+	padding: 0;
+	margin: 0;
+}
+.storyAudio audio
+{
+	width: 100%;
+}
+.storyContent
+{
+	padding: 60px 150px 60px 150px;
+	font-size: 14px; 
+}
+.storyContent em
+{
+	background-color: #fffcb8;
+	font-style: normal;
+}
+.storyForm
+{
+	padding: 0 150px 150px 150px;
+}
+.storyFormReaction
+{
+	font-size: 20px; 
+	width: 100%;
+	height: 100px;
+	resize: none;
+}
+.storyFormSubmit
+{
+	width: 200px;
+	height: 50px;
+}
+.clear
+{
+	cear: both
+}
+.frontThisIssue
+{
+	position:relative;
+	display: block;
+	padding: 100px 0 100px 0;
+	background-color: #fff;	
+}
+.frontThisIssue ul
+{
+	margin: 0 300px 0 300px;
+}
+.frontThisIssue li
+{
+	display: block;
+	padding: 10px 0px 10px 0px;
+	font-size: 18px;
+}
+.frontThisIssue li span
+{
+	padding: 0 50px 0 50px;	
+}
+.footer
+{
+	margin: 0;
+	height: 100px;
+	background-color: #dde;	
+}
+.footer a
+{
+	color: #000;
+	text-decoration: none;
+}
+.footerCopyrightBar
+{
+	padding: 30px;
+	text-align: center;
+	font-size: 12px;
+
+}
+.indexThumb
+{
+	padding: 0;
+	margin: 0;  
+	cursor: pointer;
+	position: relative;
+	width: 25%;
+   	padding-top: 25%;
+	overflow: hidden;
+	float: left;
+}
+.indexThumbInner 
+{
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	width: auto;
+	height: auto;
+	object-fit: cover;
+	filter: none;
+	transition: 1s;
+}
+.indexThumbInner:hover
+{
+	filter: sepia(100%);
+	transition: 1s;
+}
+.indexThumbTitleBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	text-align: left;
+}
+.indexThumbTitle
+{
+	min-height: 58px;
+	background-color: #eef;
+	opacity: 0.8;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-left: 10px;
+}
+.indexThumbContent
+{
+	min-height: 68px;
+	background-color: #eef;
+	opacity: 0.6;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-left: 10px;
+}
+.index
+{
+	margin: 0;	
+	padding: 20px 10px 50px 10px;
+	text-align: center;
+	background-color: #334;
+	color: #eef;
+	clear: both;
+}
+.indexInner
+{
+	max-width: 1500px;
+	margin: 0 auto;
+}
+.index h2
+{
+	text-align: left;
+	font-size: 20px;
+	padding: 10px 0;
+	color: #eef;
+}
+.next
+{
+	position: relative;
+	margin: 0;	
+	height: 500px;
+}
+.nextInner
+{
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	background-size: cover;
+	background-position: center;
+	filter: none;
+	transition: 1s;
+}
+.nextInner:hover
+{
+	filter: sepia(100%);
+	transition: 1s;
+}
+.nextTitleBar
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+.nextTitle
+{
+	opacity: 0.8;	
+	background-color: #eef;
+	font-size: 16px;
+	padding-left: 10px;
+	text-align: left;
+	font-weight: normal;
+}
+.nextContent
+{
+	padding-left: 10px;
+	opacity: 0.6;	
+	background-color: #eef;
+	font-size: 20px;
+	overflow: hidden;
+	text-align: left;
+	font-weight: normal;
+}
+.navAd
+{
+	position: relative;
+	height: 500px;
+}
+.navAdInner
+{
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	cursor: pointer;
+	background-size: cover;
+	background-position: center;
+	filter: none;
+	transition: 1s;
+}
+.navAdInner:hover
+{
+	filter: sepia(100%);
+	transition: 1s;
+}
+.navAdTitleBar
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+.navAdTitle
+{
+	opacity: 0.8;	
+	background-color: #eef;
+	font-size: 14px;
+	padding-left: 10px;
+	text-align: left;
+	font-weight: normal;
+}
+.navAdContent
+{
+	padding-left: 10px;
+	opacity: 0.6;	
+	background-color: #eef;
+	font-size: 20px;
+	overflow: hidden;
+	text-align: left;
+	font-weight: normal;
+}
+.clear
+{
+	clear: both;
+}
+.becomeMember
+{
+}
+.navigationHint
+{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	line-height: 50px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #000;
+	opacity: 0.6;
+	padding: 0;
+	text-indent: 30px;
+	height: 50px;
+	overflow: hidden;
+}
+.navigationButton
+{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	background-image: url(../images/iconmenu.png);
+	background-size: 200% 100%;
+	background-position: 0;
+	background-repeat: no-repeat;
+	background-color: #eef;
+	z-index: 1;
+	opacity: 0.6;
+}
+.navigationOpen .navigationButton
+{
+	background-position: 100% 0;
+}
+
+.navigation
+{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: -webkit-calc(100% - 50px);
+	right: -moz-calc(100% - 50px);
+	right: calc(100% - 50px);
+	width: 100%;	
+	height: 100%;
+	z-index: 1001; 
+	background-color: #445;
+	overflow: hidden;
+}
+.navigationClose
+{
+	-webkit-transition: transform 1s;
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: transform 1s;
+	-o-transition: transform 1s;
+	transition: transform 1s;
+}
+.navigationOpen
+{
+	-webkit-transition: transform 1s;
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: transform 1s;
+	-o-transition: transform 1s;
+	transition: transform 1s;
+	transform: translateX(-webkit-calc(100% - 50px));
+	transform: translateX(-moz-calc(100% - 50px));
+	transform: translateX(calc(100% - 50px));
+}
+.navigationCover
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: -2; 
+	opacity: 0;
+}
+.navigationClose .navigationCover
+{
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+	opacity: 0;
+}
+.navigationOpen .navigationCover
+{
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+	opacity: 1;
+}
+.navigationCoverTitleBar
+{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+	opacity: 0.6;
+	padding: 20px;
+
+}
+.navigationCoverTitle
+{
+	font-size: 60px;
+	text-align: center;
+}
+.navigationCoverSubtitle
+{
+	font-size: 30px;
+	text-align: center;
+}
+.navigationCoverIssue
+{
+	font-size: 20px;
+	text-align: center;
+}
+
+.navigationBG
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	z-index: -1; 
+	background-size: cover;
+	background-position: center;
+	opacity: 0.0;
+	transition: 1s;
+}
+.navigationBGAnimate
+{
+	opacity: 1.0;
+	transition: 1s;
+}
+.navigationBGTitleBar
+{
+	position: absolute;
+	bottom: 300px;
+	right: 0;
+	min-width: 70%; 
+	background-color: #fff;
+	padding: 20px 20px 20px 40px;
+	margin: 0 0 0 50px;
+	opacity: 0.6;
+}
+.navigationBGTitle
+{
+	font-size: 40px;
+	color: #000;
+}
+
+.navigationMain
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	background-color: #000;
+	opacity: 0;
+}
+.navigationClose .navigationMain
+{
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+	opacity: 0;
+}
+.navigationOpen .navigationMain
+{
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+	opacity: 1;
+}
+.navigationMain h2
+{
+	color: #eef;
+	padding: 0;
+	padding: 20px 0 5px 0;
+	clear: both;
+}
+.navigationMain ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navigationMain li
+{
+	margin: 0;
+	padding: 0;
+}
+.navigationMain li a
+{
+	display: block;
+	width: 50%;
+	line-height: 30px;
+	color: #eef;
+	font-size: 22px;
+	text-decoration: none;
+	padding: 3px;
+}
+.navigationMain li a:hover
+{
+	background-color: #eef;
+	color: #224;
+}
+.navigationIndex ul
+{
+	clear: both;
+}
+.navigationIndex li
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.navigationIndex li a
+{
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	background-position: center;
+	color: #eef;
+	font-size: 22px;
+	text-decoration: none;
+	margin: 0;
+}
+.navigationIndex li a:hover
+{
+	background-color: #eef;
+	color: #224;
+}
+.navigationTop ul
+{
+	list-style: none;
+	clear: both;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+.navigationTop li 
+{
+	float: left;
+	display: block;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+.navigationTop li.navigationExit 
+{
+	float: right;
+}
+.navigationTop li span, .navigationTop li a
+{
+	display: block;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	color: #eef;
+	font-size: 22px;
+	text-decoration: none;
+	background-size: 100%;
+}
+.navigationTop li span:hover, .navigationTop li a:hover
+{
+	background-color: #eef;
+	color: #224;
+}
+.navigationSponsored ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navigationSponsored li a
+{
+	display: block;
+	height: 80px;
+	width: 80px;
+	background-size: cover;
+	background-position: center;
+	margin: 4px;
+}
+#navigationExit
+{
+	cursor: pointer;
+	line-height: 50px;
+}
+.navigationTop
+{
+	width: 50%;
+	margin: 30px 0 0 0;
+	padding: 50px 50px 0 50px;
+}
+.navigationSocial-facebook
+{
+	background-image: url(../images/smicons/facebook.png);
+}
+.navigationSocial-youtube
+{
+	background-image: url(../images/smicons/youtube.png);
+}
+.navigationSocial-linkedin
+{
+	background-image: url(../images/smicons/linkedin.png);
+}
+.listenPlayer
+{
+	position: relative;
+	height: 60px;
+
+}
+.listenPlayerProgressBar
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 8px;
+	background-color: #667;
+}
+.listenPlayerProgressBar:hover
+{
+	height: 20px;	
+}
+.listenPlayerProgressBar div
+{
+	position: absolute;
+	width: 0;
+	height: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #f00;
+}
+.listenPlayerPause
+{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 60px;
+	height: 60px;
+	background-image: url(../images/listenplayer.png);
+	background-size: 200% 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	cursor: pointer;
+}
+.listenPlayerPlay
+{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 60px;
+	height: 60px;
+	background-image: url(../images/listenplayer.png);
+	background-size: 200% 100%;
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	cursor: pointer;
+}
+.colofon
+{
+	text-align: center;
+	margin: 0 auto;
+	max-width: 1100px;
+	padding: 50px;
+}
+.colofon div 
+{
+	display: inline-block;
+	min-width: 0;
+	padding: 3px 10px;
+}
+.colofon b 
+{
+	padding: 5px;
+}
+.colofon i 
+{
+	padding: 5px;
+}
+@media only screen and (max-width: 1200px)  
+{
+	.headerTitleBar	
+	{
+		padding: 20px;	
+	}
+	.indexThumb
+	{	
+		width: 33%;
+	   	padding-top: 33%;
+	}
+}
+@media only screen and (max-width: 800px)  
+{
+	.header
+	{
+		height: 120px; 
+	}
+	.headerTitle 
+	{
+		text-align: center;
+		font-size: 30px;
+	}
+	.headerSubtitle
+	{
+		text-align: center;
+		font-size: 16px;
+	}
+	.headerIssue
+	{
+		text-align: center;
+		font-size: 12px;
+	}
+	.storyTitle
+	{
+		font-size: 20px;
+	}
+	.storyAuthor
+	{
+		font-size: 12px;
+	}
+	.storyAuthor img
+	{
+		width: 12px;
+		height: 12px;
+	}
+	.storyContent
+	{
+		padding: 30px;
+	}
+	.next
+	{
+		height: auto;
+		width: 100%;
+   		padding-top: 50%;
+	}
+	.nextTitle
+	{
+		font-size: 20px;
+	}
+	.nextContent
+	{
+		font-size: 14px;
+	}
+	.storyForm
+	{
+		padding: 0 30px 30px 30px;
+	}
+	.navAd
+	{
+		height: auto;
+		width: 100%;
+		padding-top: 50%;
+	}
+	.navAdTitle
+	{
+		font-size: 20px;
+	}
+	.navAdContent
+	{
+		font-size: 14px;
+	}
+
+	.navigationIndex li a
+	{
+		width: 50px;
+		height: 50px;
+	}
+	.navigationSponsored li a
+	{
+		width: 50px;
+		height: 50px;
+	}
+}
+@media only screen and (max-width: 600px)  
+{
+	.headerTitle 
+	{
+		text-align: center;
+		font-size: 26px;
+	}
+	.headerSubtitle
+	{
+		font-size: 14px;
+	}
+	.indexThumb
+	{	
+		width: 100%;
+	   	padding-top: 100%;
+	}
+	.next
+	{
+		height: auto;
+		width: 100%;
+   		padding-top: 100%;
+	}
+	.navAd
+	{
+		height: auto;
+		width: 100%;
+		padding-top: 100%;
+	}
+}

@@ -1,0 +1,210 @@
+@font-face 
+{
+  font-family: 'Space Grotesk';
+  src: url(../fonts/subset-SpaceGrotesk-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Alegreya Sans SC';
+    src: url(../fonts/AlegreyaSansSC-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Dyslexie Regular';
+    src: url('../fonts/Dyslexie_Regular_166803.woff') format('woff'),
+        url('../fonts/Dyslexie_Regular_166803.ttf') format('truetype');
+    font-style: normal;
+}  
+*
+{
+	font-family: 'Dyslexie Regular';
+}
+@page 
+{
+	padding: 150px 0 100px 0; 
+	margin: 0px !important; 
+}
+body 
+{ 
+	padding: 150px 0 100px 0; 
+	margin: 0px;
+	background-color: #fff; 
+}
+h1, h2, h3, h4 
+{ 
+	padding: 0px; 
+	margin: 0px; 
+}
+.unicode
+{
+	font-size: 80px;
+	
+}
+.pageSpacer
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.frontCover
+{
+	position: absolute;
+	background-size: cover; 
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;			
+}
+.frontTitleBar
+{
+	position: absolute;
+	top: 300px;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	opacity: 0.8;
+	padding: 90px 200px 90px 200px;
+	text-align: center;
+}
+.frontTitle 
+{
+	font-size: 120px;
+	padding: 0;
+	margin: 0 0 -60px 0;
+}
+.frontSubtitle
+{
+	font-size: 50px;
+	padding: 0;
+	margin: -60px 0 0 0;
+}
+.frontIssue
+{
+	margin-top: 40px;
+	font-size: 30px;
+}
+.storyCover
+{
+	page-break-before: always;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	left: 0;
+	right: 0; 
+	width: 100%;
+	height: 800px;
+	margin: 0;
+}
+.storyTitleBar
+{
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: 0 300px;
+}
+.storyTitle
+{
+	background-color: #fff;
+	font-size: 60px;
+	padding: 30px 0 45px 0;
+}
+.storyAuthor
+{
+	font-size: 30px;
+	padding: 20px 0 35px 0;
+	margin: 0;
+}
+.storyAuthor img
+{
+	width: 50px;
+	height: 50px;
+	margin-bottom: -12px;
+}
+.storyContent
+{
+	margin: 0px;
+	padding: 60px 300px 60px 300px;
+	background-color: #fff; 
+	font-size: 34px;
+}
+.backCover
+{
+	page-break-before: always;
+	position: absolute;
+	background-size: cover; 
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;			
+}
+.backCoverCopyrightBar
+{
+	position: absolute;
+	background-color: #fff;
+	opacity: 0.8;
+	padding: 30px;
+	text-align: center;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+	font-size: 34px;
+}
+.photoWall
+{
+	page-break-before: always;
+	position: relative;
+	top: 200px;
+	width: 100%;
+	height: 3250px;
+}
+.photoWallPhoto
+{
+	display: inline-block;
+	background-size: cover; 
+	background-position: center;
+}
+.clear
+{
+	cear: both
+}
+.backCoverWebsiteQR
+{
+	position: absolute;
+	background-size: 100%; 
+	background-position: center;
+	width: 400px;
+	height: 400px;
+	top: 300px;
+	left: 300px;			
+}
+.frontThisIssue
+{
+	position: absolute;
+	display: block;
+	width: auto;
+	left: 0px;
+	right: 0px;
+	bottom: 300px;
+	padding: 100px 0 100px 0;
+	background-color: #fff;	
+	opacity: 0.8;
+}
+.frontThisIssue ul
+{
+	margin: 0 300px 0 300px;
+}
+.frontThisIssue li
+{
+	display: block;
+	padding: 10px 0px 10px 0px;
+	font-size: 40px;
+}
+.frontThisIssue li span
+{
+	padding: 0 50px 0 50px;	
+}
+
+
+

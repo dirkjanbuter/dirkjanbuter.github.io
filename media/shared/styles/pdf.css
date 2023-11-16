@@ -1,0 +1,301 @@
+@font-face 
+{
+  font-family: 'Space Grotesk';
+  src: url(../fonts/subset-SpaceGrotesk-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Alegreya Sans SC';
+    src: url(../fonts/AlegreyaSansSC-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Dyslexie Regular';
+    src: url('../fonts/Dyslexie_Regular_166803.woff') format('woff'),
+        url('../fonts/Dyslexie_Regular_166803.ttf') format('truetype');
+    font-style: normal;
+}  
+*
+{
+	font-family: 'Dyslexie Regular';
+}
+@page 
+{
+	padding: 150px 0 100px 0; 
+	margin: 0px; 
+}
+body 
+{ 
+	padding: 150px 0 100px 0; 
+	margin: 0px;
+	background-color: #fff; 
+}
+h1, h2, h3, h4 
+{ 
+	padding: 0px; 
+	margin: 0px; 
+}
+.unicode
+{
+	font-size: 80px;
+	color: #000;
+}
+.pageSpacer
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.frontCover
+{
+	position: absolute;
+	background-size: cover; 
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;			
+}
+.frontTitleBar
+{
+	position: absolute;
+	top: 300px;
+	left: 0;
+	right: 0;
+	padding: 90px 200px 90px 200px;
+	text-align: center;
+	background-color: #fff;
+	opacity: 0.8;
+}
+.frontTitle 
+{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 180px;
+	padding: 0;
+	margin: 0 0 -60px 0;
+}
+.frontSubtitle
+{
+	font-size: 70px;
+	padding: 0;
+	margin: -60px 0 0 0;
+}
+.frontIssue
+{
+	margin-top: 40px;
+	font-size: 50px;
+}
+.storyCover
+{
+	page-break-before: always;
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	left: 0;
+	right: 0; 
+	width: 100%;
+	height: 1400px;
+	margin: 0;
+}
+.storyTitleBar
+{
+	position: absolute;
+	bottom: 150px;
+	left: 300px;
+	right: 0;
+	text-align: left;
+	margin: 0px;
+	opacity: 0.8;
+}
+.storyTitle
+{
+	background-color: #fff;
+	color: #000;
+	font-size: 90px;
+	padding: 30px 300px 45px 60px;
+}
+.storyAuthor
+{
+	font-size: 40px;
+	background-color: #000;
+	color: #fff;
+	padding: 20px 300px 35px 60px;
+	margin: 0 0 0 300px;
+	font-family: 'Cutive Mono';
+}
+.storyAuthor img
+{
+	width: 50px;
+	height: 50px;
+	margin-bottom: -12px;
+}
+.storyContent
+{
+	margin: 0px;
+	padding: 60px 300px 60px 300px;
+	background-color: #fff; 
+}
+.tableOfContents
+{
+	page-break-before: always;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;			
+	left: 0;
+	right: 0;
+}
+.tableOfContentsTitle
+{
+	text-indent: 20px; 
+	position: relative;
+	background-color: #000;
+	color: #fff;
+	padding: 0 300px 20px 0;
+	margin: 300px 0 50px 300px;
+	right: 0;
+	line-height: 70px;
+	font-size: 50px; 
+}
+.tableOfContentsMain
+{
+	padding: 0 300px 0 350px;
+}
+.tableOfContentsMain ul
+{
+	padding: 0;
+	margin: 0;
+}
+.tableOfContentsMain li
+{
+	text-indent: 10px; 
+	font-size: 60px;
+}
+.tableOfContentsColofon
+{
+	padding: 0 300px 0 300px;
+}
+.tableOfContentsColofon ul 
+{
+	list-style: none;	
+	margin: 0;
+	padding: 0;
+}
+.tableOfContentsColofon li 
+{
+	display: inline;
+	padding: 5px 120px 5px 0;
+}
+.tableOfContentsColofon .b 
+{
+	padding: 0 30px 0 0;
+	font-size: 40px;
+}
+.tableOfContentsColofon .i 
+{
+	padding: 0 30px 0 0;
+	font-size: 40px;
+}
+.tableOfContentsAddress
+{
+	padding: 30px 300px 0 300px;
+}
+.tableOfContentsAddress ul
+{
+	list-style: none;	
+	margin: 0;
+	padding: 0;
+}
+.tableOfContentsAddress li
+{
+	display: inline;
+	text-indent: 0;
+	padding: 5px 60px 5px 0;
+	margin: 0;
+	font-size: 40px;
+}
+.tableOfContentsWebsite
+{
+	padding: 0 300px 0 300px;
+	font-size: 40px;
+}
+.backCover
+{
+	page-break-before: always;
+	position: absolute;
+	background-size: cover; 
+	background-position: center center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+.backCoverCopyrightBar
+{
+	position: absolute;
+	background-color: #fff;
+	opacity: 0.8;
+	padding: 60px;
+	text-align: center;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+}
+.photoWall
+{
+	page-break-before: always;
+	position: relative;
+	top: 200px;
+	width: 100%;
+	height: 3250px;
+}
+.photoWallPhoto
+{
+	display: inline-block;
+	background-size: cover; 
+	background-position: center center;
+}
+.clear
+{
+	cear: both
+}
+.backCoverWebsiteQR
+{
+	position: absolute;
+	background-size: 100%; 
+	background-position: center center;
+	width: 400px;
+	height: 400px;
+	top: 300px;
+	left: 300px;			
+}
+.frontThisIssue
+{
+	opacity: 0.8;
+	position: absolute;
+	display: block;
+	width: auto;
+	left: 0px;
+	right: 0px;
+	bottom: 300px;
+	padding: 100px 0 100px 0;
+	background-color: #fff;
+}
+.frontThisIssue ul
+{
+	margin: 0 300px 0 300px;
+}
+.frontThisIssue li
+{
+	display: block;
+	padding: 10px 0px 10px 0px;
+	font-size: 50px;
+}
+.frontThisIssue li span
+{
+	padding: 0 50px 0 50px;	
+}
+
+
+
