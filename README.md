@@ -6,6 +6,6 @@ Dirk Jan Buter's Magazine is about technology for personal development. It featu
 
 [patreon.com/dirkjanbuter](https://patreon.com/dirkjanbuter)
 
-## Copyrght Information
+## Copyright Information
 
 Dirk Jan Buter is the owner of this magazine. If you want to use text, images or anything else from it, please ask me first. Thank you!
