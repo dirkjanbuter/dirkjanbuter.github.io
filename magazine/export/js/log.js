@@ -11,7 +11,7 @@ function logPage()
        }
    };
 
-   xhttp.open("GET", "https://dirkjanbuter.com/magazine/app/log.php?p="+encodeURIComponent(window.location.pathname)+"&w="+w+"&h="+h+"&t=" + Math.random(), true);
+   xhttp.open("GET", "https://dirkjanbuter.com/magazine/app/log.php?u="+encodeURIComponent(window.location)+"&w="+w+"&h="+h+"&t=" + Math.random(), true);
    xhttp.send();
 }
 window.addEventListener('load', logPage);
