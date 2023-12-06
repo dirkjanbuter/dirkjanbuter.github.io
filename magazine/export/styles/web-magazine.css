@@ -68,7 +68,7 @@ h1, h2, h3, h4
 	height: 200px;
 	background-position: 60px center;
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
+	background-size: 110px 110px;
 	cursor: pointer;
 }
 .headerTitleBar
@@ -1013,10 +1013,9 @@ h1, h2, h3, h4
 {
 	padding: 50px 50px 50px 240px;
 	background-color: #334;
-	background-image: url(../images/logo.webp);
 	background-position: 60px center;
 	background-repeat: no-repeat;
-	background-size: 140px 140px;
+	background-size: 150px 150px;
 }
 .involvementPatreon h1 a
 {
@@ -1304,7 +1303,6 @@ h1, h2, h3, h4
 	{
 		padding: 240px 50px 50px 50px;
 		background-color: #334;
-		background-image: url(../images/logo.webp);
 		background-position: center 60px;
 		background-repeat: no-repeat;
 		background-size: 140px 140px;
